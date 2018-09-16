@@ -1,0 +1,11 @@
+@import "~src/variables";
+
+.bandeau {
+  background: $palette-color-three;
+  h1 {
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    color: $light-color;
+  }
+}

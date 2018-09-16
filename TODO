@@ -1,0 +1,70 @@
+
+Todo:
+  ✔ Install nodeJs @done(18-09-10 22:13)
+  ✔ Install VsCode and plugins @done(18-09-10 22:13)
+  ✔ News ES6 - ES7 @done(18-09-10 22:13)
+  ✔ Web components @done(18-09-10 22:13)
+   ✔ TypeScript @done(18-09-10 22:13)
+  ✔ Angular CLI et WebPack @done(18-09-10 22:13)
+  Pause :
+
+  ✔ Start new app --style=scss with cmd @done(18-09-10 22:17)
+  ✔ Open app with code . from terminal @started(18-09-10 22:17) @done(18-09-10 22:17) @lasted(56s)
+  ✔ Config VsCode @done(18-09-10 22:17)
+  ✔ Explain files and forders @done(18-09-10 22:18)
+  ✔ Go to architecture overview @done(18-09-10 22:18)
+  ✔ Explain Architecture app @done(18-09-10 22:18)
+  ✔ Starts architecture with modules (login and user-interface) @done(18-09-10 22:18)
+  Exercice :
+  ✔ Generate modules (Shared, Prestations, PageNotFound) @done(18-09-10 22:18)
+
+  ✔ Do User-interface container @done(18-09-10 22:18)
+  ✔ Do header, nav, footer components in ui module @done(18-09-10 22:18)
+  ✔ Export ui-compoent et import de ui-module pour afficher ui-compoent sur appCompoent @done(18-09-11 09:42)
+  ✔ Afficher header, nav, footer sur ui-component @done(18-09-11 09:42)
+  Exercice :
+  ✔ Do containers et components in loginModule, PrestationsModule, PageNotFoundModule @done(18-09-11 14:13)
+  ✔ Generate list-prestations component in Prestations / containers @done(18-09-11 14:14)
+  ✔ Display ListPrestation template in ui-component.html @done(18-09-11 14:14)
+  Pause :
+  ✔ Router avec app-routing @done(18-09-11 14:14)
+  ✔ RouterLink et RouterLinkActive @done(18-09-11 14:14)
+  ✔ Afficher dans la console json avec les routes (appModule) @done(18-09-11 14:14)
+  ✔ login-routing @done(18-09-11 14:14)
+  Exercice :
+  ✔ prestation-routing, 404routing @done(18-09-11 14:14)
+
+  ✔ Lazy-loading et suppression des imports de modules chargés en lazy @done(18-09-11 14:15)
+  Pause midi :
+  ✔ Service prestations @done(18-09-11 15:50)
+  ✔ fakecollection.ts @done(18-09-11 15:50)
+  ✔ enum @done(18-09-11 15:50)
+  ✔ interface @done(18-09-11 15:50)
+  ✔ model avec Partial (avantages parametres només vs parametres ordonnés) @done(18-09-11 15:50)
+  Pause :
+  ✔ Injection dependance et singleton @done(18-09-12 09:23)
+  ✔ directives ngIf avec ngFor and ng-container @done(18-09-12 09:23)
+  ✔ Component prestation avec Input() @done(18-09-12 09:23)
+  ✔ Component tableau avec Input() and ng-content @done(18-09-12 09:23)
+  ✔ Remplacer tr ngFor par ng-container ngFor et mettre app-prestation en display table-row @done(18-09-12 09:23)
+
+  ☐ documentation
+
+  ☐ creer une route pour edit avec id et un resolve
+  ☐ creation du service resolve
+    ☐ récuperer l'id passé dans la route
+    ☐ injecter PrestationService
+    ☐ dans methode resolve, appeler getPrestation de PrestationService en lui passant l'id
+    ☐ return le resultat de la requete si data récupérée
+    ☐ sinon return false et router.navigate vers liste des prestations
+  ☐ sur editComponent.ts
+    ☐ récupérer dans router l'objet que le resolve a retourné
+    ☐ passer cet objet à app-form via un @Input()
+  ☐ sur form-reactive.ts
+    ☐ ajouter @Input() pour récupérer l'objet passé depuis editComponent
+    ☐ dans createForm(), utiliser ternaires pour pré-remplir le formulaire
+    ☐ dans process() utiliser spread operator pour ajouter l'id à l'objet this.form.value
+    ☐ envoyer au parent editComponent un @Output() (existe déjà) avec l'id
+  ☐ sur editComponent.ts
+    ☐ utiliser la methode update() du service PrestationsService et lui passer une obj avec id
+

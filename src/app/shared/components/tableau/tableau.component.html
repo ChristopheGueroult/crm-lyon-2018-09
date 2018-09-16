@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" *ngFor="let head of headers">{{ head }}</th>
+i        </tr>
+      </thead>
+      <tbody>
+        <ng-content></ng-content>
+      </tbody>
+      <!-- <div>
+        <a [routerLink]="[lastRow.route]">{{ lastRow.libelle }}</a>
+      </div> -->
+      <ng-content select="div"></ng-content>
+    </table>
+
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<td>{{ presta.typePresta }}</td>
+<td>{{ presta.client }}</td>
+<td>{{ presta.nb_jours}}</td>
+<td>{{ presta.tjm_ht | localCurrency }}</td>
+<td>{{ presta | total | currency: 'EUR' }}</td>
+<td>{{ presta | total: presta.taux_tva | currency: 'EUR' }}</td>
+
+<!-- <td>{{ presta.state }}</td> -->
+<td [appState]="presta.state">
+  <select (change)="update($event)" (click)="$event.stopPropagation()">
+    <option [value]="presta.state">{{ presta.state }}</option>
+    <ng-container *ngFor="let state of states">
+      <option *ngIf="state !== presta.state"  [value]="state">{{ state }}</option>
+    </ng-container>
+  </select>
+
+</td>
+<td><button (click)="$event.stopPrapagation(); delete()">x</button></td>

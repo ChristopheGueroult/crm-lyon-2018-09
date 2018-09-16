@@ -1,0 +1,5 @@
+@import "~src/variables";
+
+tbody > *:hover {
+  background: darken($light-color, 10%);
+}
