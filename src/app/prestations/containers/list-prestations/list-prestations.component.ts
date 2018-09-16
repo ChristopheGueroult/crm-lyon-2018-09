@@ -3,6 +3,7 @@ import { PrestationService } from '../../services/prestation.service';
 import { Prestation } from '../../../shared/models/prestation-m';
 import { Observable, Subscription, Subject } from 'rxjs';
 import { Router } from '@angular/router';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-list-prestations',
@@ -14,6 +15,7 @@ export class ListPrestationsComponent implements OnInit, OnDestroy {
   public collection$: Observable<Prestation[]>;
   public listHeaders: string[];
   public message$: Subject<string>;
+  public faPlusCircle = faPlusCircle;
   // private sub: Subscription;
   // public addPresta = {libelle: 'Add prestation', route: '/prestations/add'};
   constructor(

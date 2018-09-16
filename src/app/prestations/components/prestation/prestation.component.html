@@ -15,4 +15,8 @@
   </select>
 
 </td>
-<td><button (click)="$event.stopPrapagation(); delete()">x</button></td>
+<td>
+  <span (click)="$event.stopPrapagation(); delete()">
+    <fa-icon [icon]="faTrashAlt"></fa-icon>
+  </span>
+</td>

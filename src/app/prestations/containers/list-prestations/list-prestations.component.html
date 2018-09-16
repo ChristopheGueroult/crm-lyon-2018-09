@@ -3,12 +3,12 @@
   <ng-container *ngFor="let item of collection$ | async">
     <app-prestation (click)="edit(item)" [presta]="item"></app-prestation>
   </ng-container>
-  <div>
-    <a [routerLink]="['add']">Ajouter une prestation</a>
+  <div class="add">
+    <a [routerLink]="['add']">
+      <fa-icon [icon]="faPlusCircle"></fa-icon>Ajouter une prestation
+    </a>
   </div>
 </app-tableau>
 <div *ngIf="message$ | async; let message">
-  {{ message  }}
+  {{ message }}
 </div>
-
-

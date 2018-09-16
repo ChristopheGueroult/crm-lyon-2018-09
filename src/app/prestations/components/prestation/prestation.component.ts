@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Prestation } from '../../../shared/models/prestation-m';
 import { State } from '../../../shared/enums/state.enum';
 import { PrestationService } from '../../services/prestation.service';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-prestation',
@@ -12,6 +13,7 @@ export class PrestationComponent implements OnInit {
   @Input() presta: Prestation;
   public res: string;
   public states = Object.values(State);
+  public faTrashAlt = faTrashAlt;
   constructor(
     private prestationService: PrestationService
   ) {

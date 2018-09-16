@@ -28,14 +28,14 @@ registerLocaleData(localeFr, 'fr');
   ],
   imports: [
     BrowserModule,
-    UiModule,
+    HttpClientModule,
     NgbModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AppRoutingModule,
+    UiModule,
     LoginModule,
     PageNotFoundModule,
-    HttpClientModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'fr' }, CurrencyPipe],
   bootstrap: [AppComponent]

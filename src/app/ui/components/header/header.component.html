@@ -1,7 +1,9 @@
 <div class="d-flex align-items-center header">
 
     <div>
-      <button (click)="toggle()">nav</button>
+      <span (click)="toggle()">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </span>
     </div>
 
     <div class="title flex-grow-1 text-center">
@@ -9,7 +11,9 @@
     </div>
 
     <div>
-      <button>login</button>
+      <span>
+          <fa-icon [icon]="faUser"></fa-icon>
+      </span>
     </div>
 
   </div>
